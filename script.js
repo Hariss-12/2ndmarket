@@ -318,6 +318,14 @@ function displayProducts() {
                             View Details
                         </button>
 
+                        <button
+                            class="buy-now-button"
+                            data-action="buy-now"
+                            data-id="${product.id}"
+                        >
+                            Buy Now
+                        </button>
+
                         ${deleteButton}
 
                     </div>
@@ -670,7 +678,7 @@ document.getElementById("productGrid").addEventListener("click", function (event
             toggleFavorite(productId);
         } else if (action === "delete") {
             deleteProduct(productId);
-        } else if (action === "details") {
+        } else if (action === "details" || action === "buy-now") {
             openDetails(productId);
         }
 

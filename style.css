@@ -326,6 +326,16 @@ textarea:focus-visible {
     background: #eef5f8;
 }
 
+.card-actions .buy-now-button {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.card-actions .buy-now-button:hover {
+    background: var(--primary-dark);
+}
+
 .card-actions .delete-button {
     color: #c0392b;
 }
